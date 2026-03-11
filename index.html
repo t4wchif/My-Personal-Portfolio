@@ -15,7 +15,44 @@
 
 </head>
 
-<body>
+<body class="text-gray-300 antialiased overflow-x-hidden">
+
+  <header class="fixed top-0 z-50 w-full glass-nav">
+    <nav class="container mx-auto flex items-center justify-between px-5 py-4">
+      <a href="#" class="text-2xl font-bold italic tracking-tighter gradient-text">
+        T.
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#about" class="transition-colors hover:text-blue-400">About</a>
+        <a href="#skills" class="transition-colors hover:text-blue-400">Skills</a>
+        <a href="#projects" class="transition-colors hover:text-blue-400">Projects</a>
+        <a href="mailto:tawchif04@gmail.com"
+          class="rounded-full bg-blue-600 px-6 py-2 text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700">
+          Hire Me
+        </a>
+      </div>
+
+      <button id="menu-btn" type="button" title="Toggle menu" class="p-1 text-gray-200 focus:outline-none md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu"
+      class="absolute left-0 hidden w-full space-y-6 border-b border-gray-700 bg-[#0f172a] px-6 py-8 shadow-2xl transition-all duration-300 md:hidden">
+      <a href="#about" class="block text-lg transition-colors hover:text-blue-400">About</a>
+      <a href="#skills" class="block text-lg transition-colors hover:text-blue-400">Skills</a>
+      <a href="#projects" class="block text-lg transition-colors hover:text-blue-400">Projects</a>
+      <a href="mailto:tawchif04@gmail.com" class="block font-bold text-blue-400">Contact Me</a>
+    </div>
+  </header>
+
+  <footer class="border-t border-gray-700 py-12 text-center text-sm text-gray-500">
+    <p>© <span id="year"></span> Tawchif. Handcrafted with Code.</p>
+  </footer>
 
 </body>
 
