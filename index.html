@@ -13,6 +13,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <script src="index.js" defer></script>
 
+  <style>
+    body {
+      background-color: #0f172a;
+    }
+
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.9);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #60a5fa, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    section {
+      scroll-margin-top: 80px;
+    }
+
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.15;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+
 </head>
 
 <body class="text-gray-300 antialiased overflow-x-hidden">
@@ -155,6 +188,78 @@
                 <p class="text-xl font-bold text-white">10+ Projects</p>
                 <p class="text-sm text-gray-500">Successfully Built</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-[#080d1a]/50 py-20 md:py-32">
+    <div class="container mx-auto px-6">
+      <h2 class="mb-16 text-center text-3xl font-bold text-white md:text-4xl">
+        Technical <span class="gradient-text">Stack</span>
+      </h2>
+      <div class="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:gap-8 lg:grid-cols-4">
+        <div
+          class="group rounded-2xl border border-gray-700 bg-[#1e293b]/40 p-6 text-center transition-all hover:border-blue-500/30 md:p-8">
+          <span class="mb-4 block text-3xl transition-transform group-hover:scale-110 md:text-4xl">🌐</span>
+          <h3 class="text-sm font-bold text-white md:text-base">HTML5</h3>
+        </div>
+        <div
+          class="group rounded-2xl border border-gray-700 bg-[#1e293b]/40 p-6 text-center transition-all hover:border-blue-500/30 md:p-8">
+          <span class="mb-4 block text-3xl transition-transform group-hover:scale-110 md:text-4xl">🎨</span>
+          <h3 class="text-sm font-bold text-white md:text-base">Tailwind CSS</h3>
+        </div>
+        <div
+          class="group rounded-2xl border border-gray-700 bg-[#1e293b]/40 p-6 text-center transition-all hover:border-blue-500/30 md:p-8">
+          <span class="mb-4 block text-3xl transition-transform group-hover:scale-110 md:text-4xl">⚡</span>
+          <h3 class="text-sm font-bold text-white md:text-base">JavaScript</h3>
+        </div>
+        <div
+          class="group rounded-2xl border border-gray-700 bg-[#1e293b]/40 p-6 text-center transition-all hover:border-blue-500/30 md:p-8">
+          <span class="mb-4 block text-3xl transition-transform group-hover:scale-110 md:text-4xl">📂</span>
+          <h3 class="text-sm font-bold text-white md:text-base">Git & GitHub</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 md:py-32">
+    <div class="container mx-auto px-6">
+      <h2 class="mb-16 text-center text-3xl font-bold text-white md:text-4xl">
+        Featured <span class="gradient-text">Projects</span>
+      </h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+        <div
+          class="group overflow-hidden rounded-3xl border border-gray-700 bg-[#1e293b]/30 transition-all hover:border-blue-500/40">
+          <div class="flex h-48 items-center justify-center bg-gray-800 text-5xl sm:h-60">💼</div>
+          <div class="p-6 sm:p-8">
+            <h3 class="mb-3 text-xl font-bold text-white">Jobs Tracker App</h3>
+            <p class="mb-6 text-sm text-gray-400 md:text-base">
+              Conceptual web app focused on dynamic DOM logic and efficient job application filtering.
+            </p>
+            <div class="flex items-center gap-6">
+              <a href="https://t4wchif.github.io/jobs-tracker-application/" target="_blank" rel="noopener noreferrer"
+                class="font-bold text-blue-400 transition-colors hover:text-blue-300">Live Demo</a>
+              <a href="https://github.com/t4wchif/jobs-tracker-application" target="_blank" rel="noopener noreferrer"
+                class="text-gray-500 transition-colors hover:text-white">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group overflow-hidden rounded-3xl border border-gray-700 bg-[#1e293b]/30 transition-all hover:border-blue-500/40">
+          <div class="flex h-48 items-center justify-center bg-gray-800 text-5xl sm:h-60">📚</div>
+          <div class="p-6 sm:p-8">
+            <h3 class="mb-3 text-xl font-bold text-white">Knowledge Vault</h3>
+            <p class="mb-6 text-sm text-gray-400 md:text-base">
+              Modern landing page showcasing clean layout architecture and responsive CSS components.
+            </p>
+            <div class="flex items-center gap-6">
+              <a href="https://t4wchif.github.io/knowledge-vault/" target="_blank" rel="noopener noreferrer"
+                class="font-bold text-blue-400 transition-colors hover:text-blue-300">Live Demo</a>
+              <a href="https://github.com/t4wchif/knowledge-vault" target="_blank" rel="noopener noreferrer"
+                class="text-gray-500 transition-colors hover:text-white">Source Code</a>
             </div>
           </div>
         </div>
